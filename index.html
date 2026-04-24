@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="Cairo_metro_logo.png" alt="Metro Logo" class="logo">
+        <a href="#">TICKETS</a>
+        <a href="#">MAP</a>
+        <a href="#">SERVICES</a>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <input type="button" value="Search" class="search-button">
+    </nav>
+</body>
+<div class="card">
+    <h1 class="description">
+        THE PULSE <br >OF CAIRO
+    </h1>
+
+    <div class="metro-image">
+        <img src="metrocar.png" alt="metro-image">
+    </div>
+</div>
+
+
+
+<div class="metro-form">
+    <h2>Plan Your Journey</h2>
+    <form action="/submit" method="post">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required><br><br>
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+        <input type="submit" value="Pick Your Ticket" class="submit-button">
+    </form>
+</div>
+
+
+
+
+</html>
