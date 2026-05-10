@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teir Enta Booking</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="./images/Plane.png" alt="Plane Logo" class="logo">
+            <h3 class="company-name">TEIR ENTA</h3>
+        </div>
+        <div class="nav-links">
+           <a href="home.html">HOME</a>
+            <a href="trips.html">MY TRIPS</a>
+            <a href="notifications.html">NOTIFICATIONS</a>
+        </div>
+
+        <input type="text" placeholder="Search..." class="search-bar">
+        <input type="button" value="Search" class="search-button">
+    </nav>
+
+    <div class="container">
+        <h1 class="text">
+            <span>WHERE</span><br>
+            <SPAN class="to-text">TO</SPAN><br>
+            <SPAn>NEXT?</SPAn><br>
+        </h1>
+
+        <div class="Plane-form input">
+            <h2>Plan Your Journey</h2>
+            <form action="/submit" method="post">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required placeholder="Departure City"><br><br>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required placeholder="Destination City"><br><br>
+
+
+
+                <div class="row">
+                    <div class="field1">
+                        <label>Date</label>
+                        <input type="date">
+                        <div>
+                            <label class="passengers">Passengers</label>
+                            <select class="passengers-input passengers-select">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>3 Adults</option>
+                                <option>4 Adults</option>
+                                <option>5 adults</option>
+                                <option>6 adults</option>
+                                <option>7 adults</option>
+                                <option>8 adults</option>
+                                <option>8 or more adults</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" value="Search Flights" class="submit-button">Search Flights</button>
+        </div>
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>

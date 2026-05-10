@@ -1,0 +1,158 @@
+body {
+    background-image: url('./images/plane_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover {
+    color: #2d4d98;
+    border-bottom: 1px solid #2d4d98;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+}
+
+.company-name {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar {
+    border: 1px solid #2d4d98;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+.search-button {
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: #2d4d98;
+}
+
+.outer-circle {
+    margin-left: 790px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.inner-circle {
+    margin-left: 70px;
+    width: 23px;
+    height: 23px;
+    background-color: #005f8f;
+    border-radius: 50%;
+    display: flex;
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.booked-msg {
+    font-size: 40px;
+    color: white;
+    margin-left: 650px;
+}
+
+.confirm-msg {
+    font-size: 25px;
+    color: white;
+    margin-left: 580px;
+}
+
+.trips-btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trips-btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trips-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.trips-btn:hover {
+    background-color: #2d4d98 color: white;
+}
+
+.download-btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.download-btn:hover {
+    background-color: white;
+    color: #2d4d98;
+}

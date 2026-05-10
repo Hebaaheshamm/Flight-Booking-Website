@@ -1,0 +1,219 @@
+body {
+    background-image: url('./images/plane_background.png');
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover {
+    color: #2d4d98;
+    border-bottom: 1px solid #2d4d98;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: 460px;
+    font-size: 20px;
+}
+
+nav{
+    height: 60px;
+}
+
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100px;  
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 22px;
+    width: 100px;
+    height: auto;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: 700px;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.search-bar {
+    display: flex;
+    border: 1px solid #2d4d98;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 150px;
+    margin-left: auto;
+    height: 20px;
+}
+
+.search-button {
+    background-color: #2d4d98;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-button:hover {
+    background-color: #fff;
+    color: #011136;
+    border: 1px solid #2d4d98;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.text{
+    padding-left:30px;
+    color: #ffffff;
+    margin-left:200px ;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.to-text{
+    margin-left: 70px;
+}
+
+
+.Plane-image {
+    margin-left: 50px;
+     border-radius: 5px;
+     
+}
+
+
+.Plane-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 400px;
+    height: 500px;
+    margin-top:120px;
+    margin-left:500px;
+    color: #ffffff;
+}
+
+.Plane-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Plane-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.Plane-form input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #2d4d98;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+.submit-button {
+    margin: 0 auto;
+    background-color: #2d4d98;;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-color: #2d4d98;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 70%;
+    height: 35px;
+    margin-left: 65px;
+    
+
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    color: #2d4d98;
+    border: 1px solid #2d4d98;
+    align-self: center;
+
+}
+
+.passengers-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #2d4d98;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.field{
+    display: flex;
+    align-items: center;
+
+}
+
+.dateinput{
+    width: 45%;
+    margin: 10px;
+}
+.passengers{
+    margin-top:10px ;
+
+}
+.passengers-select{
+    width: 96%;
+}
