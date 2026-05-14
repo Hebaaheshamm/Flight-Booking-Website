@@ -1,0 +1,289 @@
+body {
+    background-image: url('./images/plane_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover {
+    color: #2d4d98;
+    border-bottom: 1px solid #2d4d98;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+}
+
+.company-name {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar {
+    border: 1px solid #2d4d98;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+.search-button {
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: #2d4d98;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.inner-check {
+    width: 55px;
+    height: 55px;
+    background-color: #2d4d98;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-top {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.step-text {
+    color: #8eb4ff;
+    margin-bottom: 10px;
+}
+
+.booked-msg {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.confirm-msg {
+    color: #ddd;
+}
+
+.booking-grid {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-card,
+.info-card,
+.image-card,
+.buttons-card {
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.flight-card {
+    width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.small-title {
+    font-size: 12px;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.status {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8eb4ff;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2d4d98;
+}
+
+.flight-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-box {
+    background-color: #dbeafe;
+    color: #2d4d98;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.flight-route h2 {
+    font-size: 40px;
+}
+
+.flight-route p {
+    color: #ddd;
+}
+
+.flight-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8eb4ff;
+    font-size: 24px;
+}
+
+.flight-line span {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.flight-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight-details h4 {
+    margin-top: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.trips-btn,
+.download-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trips-btn:hover,
+.download-btn:hover {
+    background-color: white;
+    color: #2d4d98;
+}
+
+.trips-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.trips-btn:hover a {
+    color: #2d4d98;
+}
+
+.change-note {
+    margin-top: 15px;
+    color: #ddd;
+    font-size: 13px;
+    line-height: 1.6;
+}

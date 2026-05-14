@@ -1,0 +1,261 @@
+body {
+    background-image: url('./images/plane_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover {
+    color: #2d4d98;
+    border-bottom: 1px solid #2d4d98;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+}
+
+.company-name {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar {
+    border: 1px solid #2d4d98;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+.search-button {
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: #2d4d98;
+}
+
+.steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.step{
+    text-align: center;
+}
+
+.circle,
+.active-circle,
+.black-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.circle{
+    background-color: lightgray;
+}
+
+.active-circle{
+    background-color: #2d4d98;
+    color: white;
+}
+
+.black-circle{
+    background-color: black;
+    color: white;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background-color: lightgray;
+    margin: 0 15px;
+    margin-bottom: 20px;
+}
+
+.blue-line{
+    background-color: #2d4d98;
+}
+
+.blue-text{
+    color: #2d4d98;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+    padding: 40px;
+}
+
+
+
+
+.Passenger-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: white;
+}
+
+.Passenger-form h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.Passenger-form label {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.Passenger-form input {
+    padding: 12px;
+    border: 2px solid #2d4d98;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-info h3 {
+    margin-top: 30px;
+}
+
+
+
+
+.trip-card {
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: fit-content;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.trip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.route {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.date {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.flight {
+    font-size: 14px;
+    text-align: right;
+}
+
+.badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #2d4d98;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+
+
+.submit-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2d4d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #2d4d98;
+}
+
+
+
+
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}

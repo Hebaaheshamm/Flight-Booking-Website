@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teir Enta Booking</title>
+    <link rel="stylesheet" href="trips.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="brand">
+            <img src="./images/Plane.png" alt="Plane Logo" class="logo">
+            <h3 class="company-name">TEIR ENTA</h3>
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="trips.html">MY TRIPS</a>
+            <a href="notifications.html">NOTIFICATIONS</a>
+        </div>
+<div class="search-box">
+
+
+        <input type="text" placeholder="Search..." class="search-bar">
+        <input type="button" value="Search" class="search-button">
+</div>
+    </nav>
+
+    <div class="steps">
+
+    <div class="step">
+        <div class="active-circle">1</div>
+        <p class="blue-text">Search</p>
+    </div>
+
+    <div class="line blue-line"></div>
+
+    <div class="step">
+        <div class="black-circle">2</div>
+        <p>Passenger</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <div class="circle">3</div>
+        <p>Seat Selection</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <div class="circle">4</div>
+        <p>Payment</p>
+    </div>
+
+</div>
+
+    <div class="container">
+
+      
+        <form action="/submit" method="post" class="Passenger-form">
+
+            <h2>Passenger Details</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Heba Hesham">
+
+            <label for="Passport">Passport Number</label>
+            <input type="text" id="Passport" name="Passport" required placeholder="A123456789">
+
+            <label for="Date">Date of Birth</label>
+            <input type="date" id="Date" name="Date" required>
+
+            <label for="Nationality">Nationality</label>
+            <input type="text" id="Nationality" name="Nationality" required placeholder="Egyptian">
+
+            <div class="contact-info">
+
+                <h3>Contact Information</h3>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required
+                    placeholder="heba.heshamshokry@gmail.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required
+                    placeholder="+20123456789">
+
+            </div>
+
+        </form>
+
+
+        <div class="trip-card">
+
+            <h2 class="title">Trip Summary</h2>
+
+            <div class="trip-header">
+
+                <div>
+                    <p class="route">LHR → JFK</p>
+                    <p class="date">Dec. 19, 2026</p>
+                </div>
+
+                <div class="flight-info">
+                    <p class="flight">Flight SK-102</p>
+                    <span class="badge">Economy Premium</span>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="price-row">
+                <span>Adult (x1)</span>
+                <span>$842.00</span>
+            </div>
+
+            <div class="price-row">
+                <span>Taxes & Fees</span>
+                <span>$124.50</span>
+            </div>
+
+            <hr>
+
+            <div class="total">
+                <span>Total Price</span>
+                <span>$966.50</span>
+            </div>
+
+            <button type="submit" class="submit-button">
+                Confirm & Continue
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
