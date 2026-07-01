@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-        background-attachment: fixed;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -71,20 +71,20 @@ body {
     color: #2d4d98;
 }
 
-.steps{
+.steps {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
 
-.step{
+.step {
     text-align: center;
 }
 
 .circle,
 .active-circle,
-.black-circle{
+.black-circle {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -94,21 +94,21 @@ body {
     font-weight: bold;
 }
 
-.circle{
+.circle {
     background-color: lightgray;
 }
 
-.active-circle{
+.active-circle {
     background-color: #2d4d98;
     color: white;
 }
 
-.black-circle{
+.black-circle {
     background-color: black;
     color: white;
 }
 
-.line{
+.line {
     width: 100px;
     height: 2px;
     background-color: lightgray;
@@ -116,15 +116,13 @@ body {
     margin-bottom: 20px;
 }
 
-.blue-line{
+.blue-line {
     background-color: #2d4d98;
 }
 
-.blue-text{
+.blue-text {
     color: #2d4d98;
 }
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -132,9 +130,6 @@ body {
     gap: 300px;
     padding: 40px;
 }
-
-
-
 
 .Passenger-form {
     width: 500px;
@@ -168,9 +163,6 @@ body {
 .contact-info h3 {
     margin-top: 30px;
 }
-
-
-
 
 .trip-card {
     width: 320px;
@@ -215,7 +207,6 @@ body {
     font-size: 12px;
     margin-top: 5px;
 }
-
 .price-row {
     display: flex;
     justify-content: space-between;
@@ -229,9 +220,6 @@ body {
     font-weight: bold;
     margin-top: 15px;
 }
-
-
-
 
 .submit-button {
     width: 100%;
@@ -249,9 +237,6 @@ body {
     background-color: white;
     color: #2d4d98;
 }
-
-
-
 
 hr {
     border: none;

@@ -9,13 +9,15 @@
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="brand">
             <img src="./images/Plane.png" alt="Plane Logo" class="logo">
             <h3 class="company-name">TEIR ENTA</h3>
         </div>
+
         <div class="nav-links">
-           <a href="home.html">HOME</a>
+            <a href="home.html">HOME</a>
             <a href="trips.html">MY TRIPS</a>
             <a href="notifications.html">NOTIFICATIONS</a>
         </div>
@@ -25,52 +27,89 @@
     </nav>
 
     <div class="container">
+
         <h1 class="text">
             <span>WHERE</span><br>
-            <SPAN class="to-text">TO</SPAN><br>
-            <SPAn>NEXT?</SPAn><br>
+            <span class="to-text">TO</span><br>
+            <span>NEXT?</span>
         </h1>
 
-        <div class="Plane-form input">
+        <div class="Plane-form">
+
             <h2>Plan Your Journey</h2>
+
             <form action="/submit" method="post">
+
                 <label for="from">From:</label>
-                <input type="text" id="from" name="from" required placeholder="Departure City"><br><br>
+                <input
+                    type="text"
+                    id="from"
+                    name="from"
+                    placeholder="Departure City"
+                    required>
+
+                <br><br>
 
                 <label for="to">To:</label>
-                <input type="text" id="to" name="to" required placeholder="Destination City"><br><br>
+                <input
+                    type="text"
+                    id="to"
+                    name="to"
+                    placeholder="Destination City"
+                    required>
 
-
+                <br><br>
 
                 <div class="row">
+
                     <div class="field1">
-                        <label>Date</label>
-                        <input type="date">
+
+                        <label for="date">Date</label>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+
                         <div>
-                            <label class="passengers">Passengers</label>
-                            <select class="passengers-input passengers-select">
+
+                            <label class="passengers" for="passengers">
+                                Passengers
+                            </label>
+
+                            <select
+                                id="passengers"
+                                name="passengers"
+                                class="passengers-input passengers-select">
+
                                 <option>1 Adult</option>
                                 <option>2 Adults</option>
                                 <option>3 Adults</option>
                                 <option>4 Adults</option>
-                                <option>5 adults</option>
-                                <option>6 adults</option>
-                                <option>7 adults</option>
-                                <option>8 adults</option>
-                                <option>8 or more adults</option>
+                                <option>5 Adults</option>
+                                <option>6 Adults</option>
+                                <option>7 Adults</option>
+                                <option>8 Adults</option>
+                                <option>8 or More Adults</option>
 
                             </select>
+
                         </div>
+
                     </div>
 
                 </div>
-                <button type="submit" value="Search Flights" class="submit-button">Search Flights</button>
+
+                <button type="submit" class="submit-button">
+                    Search Flights
+                </button>
+
+            </form>
+
         </div>
-        </form>
-
-
 
     </div>
+
 </body>
 
 </html>

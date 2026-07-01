@@ -22,81 +22,84 @@
             <a href="trips.html">MY TRIPS</a>
             <a href="notifications.html">NOTIFICATIONS</a>
         </div>
-<div class="search-box">
 
+        <div class="search-box">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <input type="button" value="Search" class="search-button">
+        </div>
 
-        <input type="text" placeholder="Search..." class="search-bar">
-        <input type="button" value="Search" class="search-button">
-</div>
     </nav>
 
     <div class="steps">
 
-    <div class="step">
-        <div class="active-circle">1</div>
-        <p class="blue-text">Search</p>
+        <div class="step">
+            <div class="active-circle">1</div>
+            <p class="blue-text">Search</p>
+        </div>
+
+        <div class="line blue-line"></div>
+
+        <div class="step">
+            <div class="black-circle">2</div>
+            <p>Passenger</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <p>Seat Selection</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <p>Payment</p>
+        </div>
+
     </div>
-
-    <div class="line blue-line"></div>
-
-    <div class="step">
-        <div class="black-circle">2</div>
-        <p>Passenger</p>
-    </div>
-
-    <div class="line"></div>
-
-    <div class="step">
-        <div class="circle">3</div>
-        <p>Seat Selection</p>
-    </div>
-
-    <div class="line"></div>
-
-    <div class="step">
-        <div class="circle">4</div>
-        <p>Payment</p>
-    </div>
-
-</div>
 
     <div class="container">
 
-      
         <form action="/submit" method="post" class="Passenger-form">
 
             <h2>Passenger Details</h2>
 
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required placeholder="Heba Hesham">
+            <input type="text" id="name" name="name" placeholder="Heba Hesham" required>
 
             <label for="Passport">Passport Number</label>
-            <input type="text" id="Passport" name="Passport" required placeholder="A123456789">
+            <input type="text" id="Passport" name="Passport" placeholder="A123456789" required>
 
             <label for="Date">Date of Birth</label>
             <input type="date" id="Date" name="Date" required>
 
             <label for="Nationality">Nationality</label>
-            <input type="text" id="Nationality" name="Nationality" required placeholder="Egyptian">
+            <input type="text" id="Nationality" name="Nationality" placeholder="Egyptian" required>
 
             <div class="contact-info">
 
                 <h3>Contact Information</h3>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required
-                    placeholder="heba.heshamshokry@gmail.com">
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="heba.heshamshokry@gmail.com"
+                       required>
 
                 <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" required
-                    placeholder="+20123456789">
+                <input type="text"
+                       id="phone"
+                       name="phone"
+                       placeholder="+20123456789"
+                       required>
 
             </div>
 
         </form>
-
-
-        <div class="trip-card">
+                <div class="trip-card">
 
             <h2 class="title">Trip Summary</h2>
 
@@ -134,7 +137,7 @@
             </div>
 
             <button type="submit" class="submit-button">
-                Confirm & Continue
+                Confirm &amp; Continue
             </button>
 
         </div>
