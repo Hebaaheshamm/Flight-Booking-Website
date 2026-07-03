@@ -10,7 +10,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: white;
 }
 
@@ -156,12 +155,6 @@ body {
     transform: translateY(-6px);
 }
 
-.card i {
-    font-size: 40px;
-    color: #2d4d98;
-    margin-bottom: 20px;
-}
-
 .card h3 {
     margin-bottom: 15px;
 }
@@ -237,10 +230,6 @@ body {
 
 .btn:hover {
     transform: scale(1.03);
-}
-
-.card {
-    transition: .3s;
 }
 
 .card:hover {

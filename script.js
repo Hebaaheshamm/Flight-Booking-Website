@@ -1,6 +1,6 @@
 function bookFlight() {
 
-    alert("Flight booked successfully.");
+    alert("Write your information.");
 
     window.location = "trips.html";
 
