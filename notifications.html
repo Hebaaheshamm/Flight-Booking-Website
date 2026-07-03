@@ -2,170 +2,332 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teir Enta Booking</title>
+
+    <title>Notifications</title>
+
     <link rel="stylesheet" href="notifications.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
     <nav class="navbar">
 
-        <div class="brand">
-            <img src="./images/Plane.png" alt="Plane Logo" class="logo">
-            <h3 class="company-name">TEIR ENTA</h3>
+        <div class="logo-box">
+
+            <img src="./images/Plane.png" class="logo" alt="Logo">
+
+            <h2>TEIR ENTA</h2>
+
         </div>
 
-        <div class="nav-links">
-            <a href="home.html">HOME</a>
-            <a href="trips.html">MY TRIPS</a>
-            <a href="notifications.html">NOTIFICATIONS</a>
-        </div>
+        <ul class="menu">
 
-        <div class="search-box">
-            <input type="text" placeholder="Search..." class="search-bar">
-            <input type="button" value="Search" class="search-button">
-        </div>
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="trips.html">Trips</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+        </ul>
 
     </nav>
 
-    <div class="container">
+    <section class="main">
 
-        <div class="success-icon">
-            <div class="inner-check">
-                ✓
-            </div>
-        </div>
+        <div class="box">
 
-        <div class="confirmation-top">
+            <h1>
 
-            <p class="step-text">
-                Step 4 of 4 : Confirmed
-            </p>
+                <i class="fa-solid fa-circle-check success-icon"></i> Booking Confirmed
 
-            <h1 class="booked-msg">
-                Your trip is booked!
             </h1>
 
-            <p class="confirm-msg">
-                A confirmation email has been sent to your inbox.
+            <p class="success-message">
+
+                Your booking has been completed successfully.
+
             </p>
 
-        </div>
 
-        <div class="booking-grid">
+            <div class="info">
 
-            <div class="left-side">
+                <p><strong>Name :</strong><span></span></p>
 
-                <div class="booking-card">
+                <p><strong>Passport :</strong><span></span></p>
 
-                    <p class="small-title">
-                        BOOKING REFERENCE
-                    </p>
+                <p><strong>Email :</strong><span></span></p>
 
-                    <h2>SKW-8921X</h2>
-
-                    <div class="status">
-                        <span class="dot"></span>
-                        CONFIRMED
-                    </div>
-
-                </div>
-
-                <div class="image-card">
-                    <img src="./images/london.jpg" alt="London">
-                </div>
+                <p><strong>Phone :</strong><span></span></p>
 
             </div>
 
-            <div class="right-side">
+            <hr>
 
-                <div class="flight-card">
+            <h2>
 
-                    <div class="flight-top">
+                Passenger Information
 
-                        <div>
-                            <p class="small-title">Flight Number</p>
-                            <h3>SK 402</h3>
-                        </div>
+            </h2>
 
-                        <div class="class-box">
-                            Business
-                        </div>
+            <p>
 
-                    </div>
-                                        <div class="flight-route">
+                <strong>Name :</strong>
 
-                        <div>
-                            <h2>SFO</h2>
-                            <p>San Francisco</p>
-                        </div>
+                <span id="passengerName"></span>
 
-                        <div class="flight-line">
-                            ✈
-                            <span>11h 20m</span>
-                        </div>
+            </p>
 
-                        <div>
-                            <h2>LHR</h2>
-                            <p>London Heathrow</p>
-                        </div>
+            <p>
 
-                    </div>
+                <strong>Passport :</strong>
 
-                    <div class="flight-details">
+                <span id="passportNumber"></span>
 
-                        <div>
-                            <p class="small-title">Gate</p>
-                            <h4>A12</h4>
-                        </div>
+            </p>
 
-                        <div>
-                            <p class="small-title">Seat</p>
-                            <h4>04C</h4>
-                        </div>
+            <p>
 
-                        <div>
-                            <p class="small-title">Boarding</p>
-                            <h4>18:45</h4>
-                        </div>
+                <strong>Email :</strong>
 
-                    </div>
+                <span id="passengerEmail"></span>
 
-                </div>
+            </p>
 
-                <div class="info-card">
+            <p>
 
-                    <h3>London Bound</h3>
+                <strong>Phone :</strong>
 
-                    <p>Oct 24, 2024</p>
-                    <p>1 Adult, Business</p>
-                    <p>Premium Dining Included</p>
+                <span id="passengerPhone"></span>
 
-                </div>
+            </p>
 
-                <div class="buttons-card">
+            <hr>
 
-                    <button class="trips-btn">
-                        <a href="trips.html">View My Trips</a>
-                    </button>
+            <h2>
 
-                    <button class="download-btn">
-                        Download Receipt
-                    </button>
+                Flight Information
 
-                    <p class="change-note">
-                        Changes can be made up to 24 hours before departure through your profile.
-                    </p>
+            </h2>
+            <p>
 
-                </div>
+                <strong>From :</strong>
+
+                <span id="fromCity"></span>
+
+            </p>
+
+            <p>
+
+                <strong>To :</strong>
+
+                <span id="toCity"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Date :</strong>
+
+                <span id="travelDate"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Passengers :</strong>
+
+                <span id="passengerCount"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Class :</strong>
+
+                <span id="flightClass"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Seat :</strong>
+
+                <span id="seatType"></span>
+
+            </p>
+
+            <button type="button" class="btn" onclick="downloadReceipt()">
+    Download Receipt
+</button>
+
+        </div>
+
+    </section>
+
+    <section class="places">
+
+        <h2>
+
+            Travel Tips
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-passport"></i>
+
+                <h3>
+
+                    Passport
+
+                </h3>
+
+                <p>
+
+                    Keep your passport with you during your trip.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-suitcase"></i>
+
+                <h3>
+
+                    Baggage
+
+                </h3>
+
+                <p>
+
+                    Check baggage weight before going to the airport.
+
+                </p>
+
+            </div>
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+
+                    Check-in
+
+                </h3>
+
+                <p>
+
+                    Arrive at the airport at least 2 hours before your flight.
+
+                </p>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-box">
+
+            <div>
+
+                <img src="./images/Plane.png" class="footer-logo" alt="Logo">
+
+                <h2>
+
+                    TEIR ENTA
+
+                </h2>
+
+                <p>
+
+                    Thank you for choosing TEIR ENTA. We wish you a pleasant journey.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <a href="home.html">
+
+                    Home
+
+                </a>
+
+                <a href="trips.html">
+
+                    Trips
+
+                </a>
+
+                <a href="notifications.html">
+
+                    Notifications
+
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
+                <p>
+
+                    Cairo, Egypt
+
+                </p>
+
+                <p>
+
+                    +20 100 000 0000
+
+                </p>
+
+                <p>
+
+                    support@teirenta.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copyright">
+
+            © 2026 TEIR ENTA. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

@@ -2,95 +2,167 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teir Enta Booking</title>
+
+    <title>TEIR ENTA</title>
+
     <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
     <nav class="navbar">
-        <div class="brand">
-            <img src="./images/Plane.png" alt="Plane Logo" class="logo">
-            <h3 class="company-name">TEIR ENTA</h3>
+
+        <div class="logo-box">
+
+            <img src="./images/Plane.png" alt="Logo" class="logo">
+
+            <h2>TEIR ENTA</h2>
+
         </div>
 
-        <div class="nav-links">
-            <a href="home.html">HOME</a>
-            <a href="trips.html">MY TRIPS</a>
-            <a href="notifications.html">NOTIFICATIONS</a>
-        </div>
+        <ul class="menu">
 
-        <input type="text" placeholder="Search..." class="search-bar">
-        <input type="button" value="Search" class="search-button">
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="trips.html">Trips</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+        </ul>
+
     </nav>
 
-    <div class="container">
+    <section class="main">
 
-        <h1 class="text">
-            <span>WHERE</span><br>
-            <span class="to-text">TO</span><br>
-            <span>NEXT?</span>
-        </h1>
+        <div class="left">
 
-        <div class="Plane-form">
+            <h1>
 
-            <h2>Plan Your Journey</h2>
+                WHERE
 
-            <form action="/submit" method="post">
+                <br>
 
-                <label for="from">From:</label>
-                <input
-                    type="text"
-                    id="from"
-                    name="from"
-                    placeholder="Departure City"
-                    required>
+                <span>TO</span>
 
-                <br><br>
+                <br> NEXT?
 
-                <label for="to">To:</label>
-                <input
-                    type="text"
-                    id="to"
-                    name="to"
-                    placeholder="Destination City"
-                    required>
+            </h1>
 
-                <br><br>
+            <p>
 
-                <div class="row">
+                Book your next trip easily and discover the most beautiful places around the world.
 
-                    <div class="field1">
+            </p>
 
-                        <label for="date">Date</label>
-                        <input
-                            type="date"
-                            id="date"
-                            name="date"
-                            required>
+        </div>
+
+        <div class="right">
+
+            <div class="booking-box">
+
+                <h2>
+
+                    Flight Booking
+
+                </h2>
+
+                <form id="bookingForm">
+
+                    <label>
+
+                        From
+
+                    </label>
+
+                    <input type="text" id="from" placeholder="Departure City">
+
+                    <label>
+
+                        To
+
+                    </label>
+
+                    <input type="text" id="to" placeholder="Destination City">
+
+                    <div class="row">
 
                         <div>
 
-                            <label class="passengers" for="passengers">
-                                Passengers
+                            <label>
+
+                                Date
+
                             </label>
 
-                            <select
-                                id="passengers"
-                                name="passengers"
-                                class="passengers-input passengers-select">
+                            <input type="date" id="date">
+
+                        </div>
+
+                        <div>
+
+                            <label>
+
+                                Passengers
+
+                            </label>
+
+                            <select id="passengers">
 
                                 <option>1 Adult</option>
+
                                 <option>2 Adults</option>
+
                                 <option>3 Adults</option>
+
                                 <option>4 Adults</option>
-                                <option>5 Adults</option>
-                                <option>6 Adults</option>
-                                <option>7 Adults</option>
-                                <option>8 Adults</option>
-                                <option>8 or More Adults</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div>
+
+                            <label>
+
+                                Class
+
+                            </label>
+
+                            <select id="class">
+
+                                <option>Economy</option>
+
+                                <option>Business</option>
+
+                                <option>First Class</option>
+
+                            </select>
+
+                        </div>
+
+                        <div>
+
+                            <label>
+
+                                Trip
+
+                            </label>
+
+                            <select id="trip">
+
+                                <option>One Way</option>
+
+                                <option>Round Trip</option>
 
                             </select>
 
@@ -98,17 +170,169 @@
 
                     </div>
 
-                </div>
+                    <button type="button" class="btn" onclick="bookFlight()">
+    Search Flights
+</button>
 
-                <button type="submit" class="submit-button">
-                    Search Flights
-                </button>
+                </form>
 
-            </form>
+            </div>
 
         </div>
 
-    </div>
+    </section>
+
+    <section class="places">
+
+        <h2>
+
+            Popular Destinations
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="./images/london.jpg" alt="London">
+
+                <h3>London</h3>
+
+                <p>United Kingdom</p>
+
+                <button class="card-btn">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="./images/paris.jpg" alt="Paris">
+
+                <h3>Paris</h3>
+
+                <p>France</p>
+
+                <button class="card-btn">
+
+                    Book Now
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="./images/dubai.jpg" alt="Dubai">
+
+                <h3>Dubai</h3>
+
+                <p>United Arab Emirates</p>
+
+                <button class="card-btn">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-box">
+
+            <div>
+
+                <img src="./images/Plane.png" class="footer-logo" alt="Logo">
+
+                <h2>
+
+                    TEIR ENTA
+
+                </h2>
+
+                <p>
+
+                    Travel with comfort and book your flights easily.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <a href="home.html">
+
+                    Home
+
+                </a>
+
+                <a href="trips.html">
+
+                    Trips
+
+                </a>
+
+                <a href="notifications.html">
+
+                    Notifications
+
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
+                <p>
+
+                    Cairo, Egypt
+
+                </p>
+
+                <p>
+
+                    +20 100 000 0000
+
+                </p>
+
+                <p>
+
+                    support@teirenta.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copyright">
+
+            © 2026 TEIR ENTA. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
