@@ -1,16 +1,24 @@
 function bookFlight() {
 
-    alert("Write your information.");
+    const form = document.getElementById("PassengerForm");
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    } else
 
-    window.location = "trips.html";
+    {
+        alert("Your flight search has been submitted successfully!");
+        window.location.href = "passenger.html";
+
+    }
 
 }
 
-function continueBooking() {
+function continuePassenger() {
 
-    alert("Passenger information saved.");
+    alert("Passenger saved.");
 
-    window.location = "notifications.html";
+    window.location = "confirmation.html";
 
 }
 

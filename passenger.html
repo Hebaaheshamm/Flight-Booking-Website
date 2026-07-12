@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Passenger</title>
+
+    <link rel="stylesheet" href="passenger.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo-box">
+
+            <img src="./images/Plane.png" class="logo" alt="Logo">
+
+            <h2>TEIR ENTA</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="passenger.html">Passenger</a></li>
+
+            <li><a href="confirmation.html">Confirmation</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="main">
+
+        <div class="left">
+
+            <div class="box">
+
+                <h2>
+
+                    Passenger Information
+
+                </h2>
+
+                <label>
+
+                    Full Name
+
+                </label>
+
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>
+
+                    Passport Number
+
+                </label>
+
+                <input type="text" id="passport" placeholder="Passport Number">
+
+                <div class="row">
+
+                    <div>
+
+                        <label>
+
+                            Birth Date
+
+                        </label>
+
+                        <input type="date" id="birth">
+
+                    </div>
+
+                    <div>
+
+                        <label>
+
+                            Nationality
+
+                        </label>
+
+                        <input type="text" id="nationality" placeholder="Nationality">
+
+                    </div>
+
+                </div>
+                <p>
+
+                    <strong>Class:</strong>
+
+                    <span id="flightClass"></span>
+
+                </p>
+
+                <p>
+
+                    <strong>Trip:</strong>
+
+                    <span id="tripType"></span>
+
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    Price Summary
+
+                </h3>
+
+                <p>
+
+                    Ticket Price
+
+                    <span>$450</span>
+
+                </p>
+
+                <p>
+
+                    Taxes
+
+                    <span>$50</span>
+
+                </p>
+
+                <p>
+
+                    <strong>Total</strong>
+
+                    <strong>$500</strong>
+
+                </p>
+
+                <button type="button" class="btn" onclick="continuePassenger()">
+    Continue
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="places">
+
+        <h2>
+
+            Travel Tips
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+
+                <h3>
+
+                    Passport
+
+                </h3>
+
+                <p>
+
+                    Make sure your passport is valid before your trip.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+
+                <h3>
+
+                    Baggage
+
+                </h3>
+
+                <p>
+
+                    Check your baggage allowance before departure.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+
+                <h3>
+
+                    Check-in
+
+                </h3>
+
+                <p>
+
+                    Arrive at the airport at least 2 hours early.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-box">
+
+            <div>
+
+                <img src="./images/Plane.png" class="footer-logo" alt="Logo">
+
+                <h2>
+
+                    TEIR ENTA
+
+                </h2>
+
+                <p>
+
+                    Travel with comfort and book your flights easily.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <a href="home.html">
+
+                    Home
+
+                </a>
+
+                <a href="passenger.html">
+
+                    Passenger
+
+                </a>
+
+                <a href="confirmation.html">
+
+                    confirmation
+
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Contact
+
+                </h3>
+
+                <p>
+
+                    Cairo, Egypt
+
+                </p>
+
+                <p>
+
+                    +20 100 000 0000
+
+                </p>
+
+                <p>
+
+                    support@teirenta.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copyright">
+
+            © 2026 TEIR ENTA. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
